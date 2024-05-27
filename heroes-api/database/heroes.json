@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Scott Summers",
+    "alias": "Cyclops",
+    "power": 1,
+    "createdAt": "2024-05-23T10:00:00Z",
+    "updatedAt": "2024-05-23T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Jean Grey",
+    "alias": "Phoenix",
+    "power": 2,
+    "createdAt": "2024-05-23T10:05:00Z",
+    "updatedAt": 1716487186138
+  },
+  {
+    "id": 3,
+    "name": "Ororo Munroe",
+    "alias": "Storm",
+    "power": 3,
+    "createdAt": "2024-05-23T10:10:00Z",
+    "updatedAt": 1716487512467
+  },
+  {
+    "id": 4,
+    "name": "James Howlett",
+    "alias": "Wolverine",
+    "power": 4,
+    "createdAt": "2024-05-23T10:15:00Z",
+    "updatedAt": "2024-05-23T10:15:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Anna Marie",
+    "alias": "Rogue",
+    "power": 5,
+    "createdAt": "2024-05-23T10:20:00Z",
+    "updatedAt": "2024-05-23T10:20:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Kurt Wagner",
+    "alias": "Nightcrawler",
+    "power": 6,
+    "createdAt": "2024-05-23T10:25:00Z",
+    "updatedAt": "2024-05-23T10:25:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Emma Frost",
+    "alias": "White Queen",
+    "power": 7,
+    "createdAt": "2024-05-23T10:30:00Z",
+    "updatedAt": "2024-05-23T10:30:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Hank McCoy",
+    "alias": "Beast",
+    "power": 8,
+    "createdAt": "2024-05-23T10:35:00Z",
+    "updatedAt": "2024-05-23T10:35:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Remy LeBeau",
+    "alias": "Gambit",
+    "power": 9,
+    "createdAt": "2024-05-23T10:40:00Z",
+    "updatedAt": "2024-05-23T10:40:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Charles Xavier",
+    "alias": "Professor Y",
+    "power": 10,
+    "createdAt": "2024-05-23T10:45:00Z",
+    "updatedAt": 1716495819659
+  },
+  {
+    "id": 11,
+    "name": "Kitty Pride",
+    "alias": "Shadowcat",
+    "power": "11",
+    "createdAt": 1716488748502,
+    "updatedAt": 1716488748502
+  },
+  {
+    "id": 12,
+    "name": "Kitty Pride",
+    "alias": "Shadowcat",
+    "power": "11",
+    "createdAt": 1716497851294,
+    "updatedAt": 1716497851294
+  }
+]
