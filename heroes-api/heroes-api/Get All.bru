@@ -1,0 +1,15 @@
+meta {
+  name: Get All
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/heroes
+  body: none
+  auth: none
+}
+
+script:post-response {
+  bru.setVar("HERO_ID", res.body[0].id)
+}

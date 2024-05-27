@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Optic Blasts",
+    "createdAt": "2024-05-23T10:00:00Z",
+    "updatedAt": "2024-05-23T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Telepathy, Telekinesis",
+    "createdAt": "2024-05-23T10:05:00Z",
+    "updatedAt": "2024-05-23T10:05:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Weather Manipulation",
+    "createdAt": "2024-05-23T10:10:00Z",
+    "updatedAt": "2024-05-23T10:10:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Regeneration, Adamantium Skeleton",
+    "createdAt": "2024-05-23T10:15:00Z",
+    "updatedAt": "2024-05-23T10:15:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Power Absorption",
+    "createdAt": "2024-05-23T10:20:00Z",
+    "updatedAt": "2024-05-23T10:20:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Teleportation",
+    "createdAt": "2024-05-23T10:25:00Z",
+    "updatedAt": "2024-05-23T10:25:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Telepathy, Diamond Form",
+    "createdAt": "2024-05-23T10:30:00Z",
+    "updatedAt": "2024-05-23T10:30:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Superhuman Strength, Agility",
+    "createdAt": "2024-05-23T10:35:00Z",
+    "updatedAt": "2024-05-23T10:35:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Kinetic Energy Manipulation",
+    "createdAt": "2024-05-23T10:40:00Z",
+    "updatedAt": "2024-05-23T10:40:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Telepathy",
+    "createdAt": "2024-05-23T10:45:00Z",
+    "updatedAt": "2024-05-23T10:45:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Phasing/Intangibility",
+    "createdAt": "2024-05-23T11:00:00Z",
+    "updatedAt": "2024-05-23T11:00:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Superhuman Strength, Durability",
+    "createdAt": "2024-05-23T11:05:00Z",
+    "updatedAt": "2024-05-23T11:05:00Z"
+  },
+  {
+    "id": 13,
+    "name": "Shapeshifting",
+    "createdAt": "2024-05-23T11:10:00Z",
+    "updatedAt": "2024-05-23T11:10:00Z"
+  },
+  {
+    "id": 14,
+    "name": "Pyrokinesis",
+    "createdAt": "2024-05-23T11:15:00Z",
+    "updatedAt": "2024-05-23T11:15:00Z"
+  },
+  {
+    "id": 15,
+    "name": "Superhuman Strength, Sound Manipulation",
+    "createdAt": "2024-05-23T11:20:00Z",
+    "updatedAt": "2024-05-23T11:20:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Flight, Fire Generation",
+    "createdAt": "2024-05-23T11:25:00Z",
+    "updatedAt": "2024-05-23T11:25:00Z"
+  },
+  {
+    "id": 17,
+    "name": "Magnetism Manipulation",
+    "createdAt": "2024-05-23T11:30:00Z",
+    "updatedAt": "2024-05-23T11:30:00Z"
+  },
+  {
+    "id": 18,
+    "name": "Probability Manipulation",
+    "createdAt": "2024-05-23T11:35:00Z",
+    "updatedAt": "2024-05-23T11:35:00Z"
+  },
+  {
+    "id": 19,
+    "name": "Plasma Generation",
+    "createdAt": "2024-05-23T11:40:00Z",
+    "updatedAt": "2024-05-23T11:40:00Z"
+  },
+  {
+    "id": 20,
+    "name": "Superhuman Reflexes, Strength",
+    "createdAt": "2024-05-23T11:45:00Z",
+    "updatedAt": "2024-05-23T11:45:00Z"
+  }
+]
