@@ -2,7 +2,7 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { HeroService } from '../hero.service';
+import { HeroService } from '../heroes/hero.service';
 import { Hero } from '../heroes/hero';
 
 @Component({

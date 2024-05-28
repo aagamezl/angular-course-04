@@ -2,8 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, catchError, of, tap } from 'rxjs';
 
-import { Hero } from './heroes/hero';
-import { MessageService } from './message.service';
+import { Hero } from './hero';
+import { MessageService } from '../message.service';
+
+export type HeroNew = Omit<Hero, 'id' | 'createdAt' | 'updatedAt'>;
 
 @Injectable({
   providedIn: 'root'
@@ -78,6 +80,13 @@ export class HeroService {
     return this.http.patch(url, hero, this.httpOptions).pipe(
       tap(_ => this.log(`updated hero id=${hero.id}`)),
       catchError(this.handleError<any>('updateHero'))
+    );
+  }
+
+  create(hero: HeroNew): Observable<any> {
+    return this.http.post(this.heroesUrl, hero, this.httpOptions).pipe(
+      tap(_ => this.log('created hero')),
+      catchError(this.handleError<any>('createHero'))
     );
   }
 }

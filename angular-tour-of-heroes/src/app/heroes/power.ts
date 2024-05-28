@@ -1,7 +1,6 @@
-export interface Hero {
+export interface Power {
   id: number;
   name: string;
-  alias: string;
   createdAt: string;
   updatedAt: string;
 }
