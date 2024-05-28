@@ -1,34 +1,20 @@
 import { Component } from '@angular/core';
-import { Location, NgFor, NgIf, UpperCasePipe } from '@angular/common';
-import {
-  FormControl,
-  FormGroup,
-  FormsModule,
-  ReactiveFormsModule,
-  Validators
-} from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { Location, NgFor } from '@angular/common';
 
-import { Hero } from '../heroes/hero';
-import { HeroService } from '../heroes/hero.service';
+import { HeroNew, HeroService } from '../heroes/hero.service';
 import { PowersService } from '../heroes/powers.service';
 import { Power } from '../heroes/power';
 
 @Component({
-  selector: 'app-hero-details',
+  selector: 'app-hero-new',
   standalone: true,
-  imports: [
-    FormsModule,
-    NgFor,
-    NgIf,
-    ReactiveFormsModule,
-    UpperCasePipe
-  ],
-  templateUrl: './hero-details.component.html',
-  styleUrl: './hero-details.component.css'
+  imports: [NgFor, ReactiveFormsModule],
+  templateUrl: './hero-new.component.html',
+  styleUrl: './hero-new.component.css'
 })
-export class HeroDetailsComponent {
-  hero?: Hero;
+export class HeroNewComponent {
   powers: Power[] = [];
 
   heroForm = new FormGroup({
@@ -53,19 +39,7 @@ export class HeroDetailsComponent {
   ) { }
 
   ngOnInit(): void {
-    this.getHero();
-
     this.getPowers();
-  }
-
-  getHero(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-
-    this.heroService.getHero(id)
-      .subscribe(hero => {
-        this.hero = hero;
-        this.heroForm.patchValue(hero);
-      });
   }
 
   getPowers(): void {
@@ -77,13 +51,10 @@ export class HeroDetailsComponent {
   }
 
   onSubmit(): void {
-    if (this.heroForm.valid && !this.heroForm.pristine) {
-      const hero = {
-        id: this.hero?.id,
-        ...this.heroForm.value
-      } as Hero;
+    if (this.heroForm.valid) {
+      const hero = this.heroForm.value as HeroNew;
 
-      this.heroService.updateHero(hero)
+      this.heroService.create(hero)
         .subscribe(() => this.goBack());
     }
   }

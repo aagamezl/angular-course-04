@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import { NgFor, UpperCasePipe } from '@angular/common';
 
 import { Hero } from './hero';
-import { HEROES } from '../mock-heroes';
 import { HeroDetailsComponent } from '../hero-details/hero-details.component';
-import { HeroService } from '../hero.service';
+import { HeroService } from './hero.service';
 import { MessageService } from '../message.service';
 import { RouterModule } from '@angular/router';
 

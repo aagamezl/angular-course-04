@@ -1,9 +1,11 @@
 <h2>My Heroes</h2>
 
+<button type="button" routerLink="/heroes/new">New</button>
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
+      <span class="badge">{{hero.id}}</span> {{hero.name}} <span>[Edit]</span>
     </a>
   </li>
 </ul>
