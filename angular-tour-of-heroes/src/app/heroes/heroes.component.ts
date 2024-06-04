@@ -6,6 +6,7 @@ import { HeroDetailsComponent } from '../hero-details/hero-details.component';
 import { HeroService } from './hero.service';
 import { MessageService } from '../message.service';
 import { RouterModule } from '@angular/router';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-heroes',
@@ -20,13 +21,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './heroes.component.css'
 })
 export class HeroesComponent {
- heroes : Hero[] = [];
+  heroes: Hero[] = [];
   selectedHero?: Hero;
 
   constructor(
     private heroService: HeroService,
     private messageService: MessageService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.getHeroes();
@@ -40,6 +41,6 @@ export class HeroesComponent {
 
   getHeroes(): void {
     this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes)
+    .subscribe(heroes => this.heroes = heroes)
   }
 }
