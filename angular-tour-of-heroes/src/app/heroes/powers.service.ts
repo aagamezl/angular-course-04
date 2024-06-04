@@ -53,4 +53,12 @@ export class PowersService {
         catchError(this.handleError<Power[]>('getPowers', []))
       );
   }
+
+  getById(id: number): Observable<Power> {
+    return this.http.get<Power>(`${this.powersUrl}/${id}`)
+      .pipe(
+        tap(_ => this.log(`fetched power id=${id}`)),
+        catchError(this.handleError<Power>(`getById id=${id}`))
+      );
+  }
 }
