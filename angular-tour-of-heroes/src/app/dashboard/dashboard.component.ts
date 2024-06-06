@@ -13,7 +13,7 @@ import { Hero } from '../heroes/hero';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  heroes: Hero[] = [];
+  heroes: Hero<number>[] = [];
 
   constructor(private heroService: HeroService) { }
 

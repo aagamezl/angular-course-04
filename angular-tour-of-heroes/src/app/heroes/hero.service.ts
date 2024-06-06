@@ -5,7 +5,7 @@ import { Observable, catchError, of, tap } from 'rxjs';
 import { Hero } from './hero';
 import { MessageService } from '../message.service';
 
-export type HeroNew = Omit<Hero, 'id' | 'createdAt' | 'updatedAt'>;
+export type HeroNew = Omit<Hero<number>, 'id' | 'createdAt' | 'updatedAt'>;
 
 @Injectable({
   providedIn: 'root'
@@ -48,7 +48,7 @@ export class HeroService {
     };
   }
 
-  getHeroes(): Observable<Hero[]> {
+  getHeroes(): Observable<Hero<number>[]> {
     // try {
     //   const heroes = await this.http.get<Hero[]>(this.heroesUrl);
     //   this.log('fetched heroes');
@@ -58,23 +58,23 @@ export class HeroService {
     //   this.handleError<Hero[]>('getHeroes', [])
     // }
 
-    return this.http.get<Hero[]>(this.heroesUrl)
+    return this.http.get<Hero<number>[]>(this.heroesUrl)
       .pipe(
         tap(_ => this.log('fetched heroes')),
-        catchError(this.handleError<Hero[]>('getHeroes', []))
+        catchError(this.handleError<Hero<number>[]>('getHeroes', []))
       );
   }
 
-  getHero(id: number): Observable<Hero> {
+  getHero(id: number): Observable<Hero<number>> {
     const url = `${this.heroesUrl}/${id}`;
 
-    return this.http.get<Hero>(url).pipe(
+    return this.http.get<Hero<number>>(url).pipe(
       tap(_ => this.log(`fetched hero id=${id}`)),
-      catchError(this.handleError<Hero>(`getHero id=${id}`))
+      catchError(this.handleError<Hero<number>>(`getHero id=${id}`))
     );
   }
 
-  updateHero(hero: Hero): Observable<any> {
+  updateHero(hero: Hero<number>): Observable<any> {
     const url = `${this.heroesUrl}/${hero.id}`;
 
     return this.http.patch(url, hero, this.httpOptions).pipe(

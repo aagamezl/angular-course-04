@@ -19,6 +19,11 @@
     <div class="form-group">
       <label for="power">Power</label>
       <select name="power" id="power" class="form-control" formControlName="power">
+        <!-- <ng-container *ngFor="let power of powers">
+          <ng-container *ngIf="!power.name.startsWith('T')">
+            <option [value]="power.id">{{power.name}}</option>
+            </ng-container>
+            </ng-container> -->
         <option *ngFor="let power of powers" [value]="power.id">{{power.name}}</option>
       </select>
     </div>
