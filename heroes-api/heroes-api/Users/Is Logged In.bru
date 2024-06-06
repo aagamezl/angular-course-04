@@ -1,0 +1,15 @@
+meta {
+  name: Is Logged In
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/users/is-logged-in
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
