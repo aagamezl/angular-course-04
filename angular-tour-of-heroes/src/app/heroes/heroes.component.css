@@ -54,3 +54,21 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+th {
+  cursor: pointer;
+}
+
+.order-pointer-down::after {
+  content: "↓";
+}
+
+.order-pointer-up::after {
+  content: "↑";
+}

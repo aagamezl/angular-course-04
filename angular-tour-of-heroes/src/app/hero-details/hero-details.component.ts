@@ -28,7 +28,7 @@ import { Power } from '../heroes/power';
   styleUrl: './hero-details.component.css'
 })
 export class HeroDetailsComponent {
-  hero?: Hero;
+  hero?: Hero<number>;
   powers: Power[] = [];
 
   heroForm = new FormGroup({
@@ -81,7 +81,7 @@ export class HeroDetailsComponent {
       const hero = {
         id: this.hero?.id,
         ...this.heroForm.value
-      } as Hero;
+      } as Hero<number>;
 
       this.heroService.updateHero(hero)
         .subscribe(() => this.goBack());

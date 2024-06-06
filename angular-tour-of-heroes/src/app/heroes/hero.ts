@@ -1,8 +1,8 @@
-export interface Hero {
+export interface Hero<T> {
   id: number;
   name: string;
   alias: string;
-  power: number;
+  power: T;
   createdAt: string;
   updatedAt: string;
 }
