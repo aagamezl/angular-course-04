@@ -86,13 +86,5 @@
     "power": "11",
     "createdAt": 1716488748502,
     "updatedAt": 1716488748502
-  },
-  {
-    "id": 12,
-    "name": "Kitty Pride",
-    "alias": "Shadowcat",
-    "power": "11",
-    "createdAt": 1716497851294,
-    "updatedAt": 1716497851294
   }
 ]

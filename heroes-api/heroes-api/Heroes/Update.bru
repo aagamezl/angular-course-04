@@ -1,0 +1,17 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{base_url}}/heroes/{{HERO_ID}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Weapon X"
+  }
+}

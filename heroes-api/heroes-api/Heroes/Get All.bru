@@ -1,0 +1,21 @@
+meta {
+  name: Get All
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/heroes
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+script:post-response {
+  if (res.body.length > 0) {
+    bru.setVar("HERO_ID", res.body[0].id) 
+  }
+}
